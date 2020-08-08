@@ -1,0 +1,66 @@
+#!/usr/bin/env python
+
+numbers1 = [2,4,6,8,10]
+numbers2 = [1,2,3,4,5,6]
+
+# Suppose we want to check if all items in numbers1 list are even or not, if they are even
+# Then print like [True, True, False] , True is that number is even & False if that number is odd
+
+def is_even(list):
+	evens = []
+	for i in list:
+		if i%2 == 0:
+			evens.append(True)
+	return evens
+
+print(is_even(numbers1)) # We get output as [True, True, True, True, True]
+print("\n")
+
+# Another way to do this:
+
+evens1 = []
+for i in numbers1:
+	evens1.append(i%2==0) # i%2==0: This would retrun either True or Fasle. It would return True if modulo is 0
+
+print(evens1) # We get output as [True, True, True, True, True]
+print("\n")
+
+# Now we will see all() function. As in both ways above we get output as [True, True, True, True, True]
+# So instead getting as output [True, True, True, True, True], for all we should just get 1 time as true
+
+evens2 = []
+for i in numbers1:
+	evens2.append(i%2==0) # i%2==0: This would retrun either True or Fasle. It would return True if modulo is 0
+
+print(all(evens2)) # This time we get output just as True
+print("\n")
+
+# evens2 will return as [True, True, True, True, True]
+# all() function applies on it: all([True, True, True, True, True]) and gives 'True'
+# Suppose if any value is Fasle all() will give False i.e all([True, False, True, True, True]) it gives 'False'
+
+# E.g:
+numbers3 = [2,4,3,6,8,10]
+evens3 = []
+for i in numbers3:
+	evens3.append(i%2==0) # i%2==0: This would retrun either True or Fasle. It would return True if modulo is 0
+
+print(all(evens3)) # This time we get output just as False
+print("\n")
+
+
+# any() Function: If any of the value is True in the list, it gives True as outptut, E.g:
+numbers4 = [3,5,7,10] # Here only 1 value is even
+evens4 = []
+for i in numbers4:
+	evens4.append(i%2==0) # i%2==0: This would retrun either True or Fasle. It would return True if modulo is 0
+
+print(any(evens4)) # This time we get output just as True
+# we get evens4 as [False, False, False, True]
+# when we apply any() on it any([False, False, False, True]) , it give 'True' like in above example
+
+
+
+
+
+
