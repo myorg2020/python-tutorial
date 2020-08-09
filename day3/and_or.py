@@ -27,8 +27,8 @@ print("\n")
 # or statement explanation:
 print("This is 'OR' statement example:")
 print("'TRUE'  'OR'  'TRUE',  overall 'TRUE'")
-print("'TRUE'  'AND' 'FALSE', overall 'TRUE'")
-print("'FALSE' 'AND' 'TRUE',  overall 'TRUE'")
+print("'TRUE'  'OR' 'FALSE', overall 'TRUE'")
+print("'FALSE' 'OR' 'TRUE',  overall 'TRUE'")
 name1 = "manisha"
 age1 = 28
 if name1=="manisha" or age1==29:

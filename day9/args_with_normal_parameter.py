@@ -5,6 +5,7 @@ def multiply_nums(*args):
     return multiply
 
 print(multiply_nums(3,2,4,5))
+print("\n")
 
 # Suppose in above function we 1 more parameter with *args i.e. num
 # It means the argument 3 will be treated as normal integer in num and only 2,4,5 will be consodered in *args
@@ -17,6 +18,7 @@ def multiply_nums1(num, *args):
     return multiply1
 
 print(multiply_nums1(3,2,4,5))
+print("\n")
 
 # Suppose if we don't pass anything in argument we get output as empty tuple i.e.()
 
@@ -28,6 +30,7 @@ def multiply_nums2(*args):
     return multiply2
 
 print(multiply_nums2()) # output is () and 1
+print("\n")
 
 # Suppose if we don't pass anything in argument but in parameter we pass num and *args
 # will get error becoz if we pass num as parameter the we must pass a argument. Error would is clearly saying:
@@ -52,6 +55,7 @@ def multiply_nums4(num1, num2 , *args):
     return multiply4
 
 print(multiply_nums4(3,2)) # output is () and 1
+print("\n")
 
 
 # Here only 5,6 are part of args so will get output as 30
@@ -63,11 +67,12 @@ def multiply_nums5(num1, num2 , *args):
     return multiply5
 
 print(multiply_nums5(3,2,5,6)) # output is () and 1
+print("\n")
 
 # we can't define normal arg i.e. num after *args. This will be an error.
 # becoz if first pass parameter as *args all the arguments which we will pass will be considered inside *args
 
 # so if we want to use a normal parameter with *args, we must pass it first
 
-def multiply_nums(*args, num): -> wrong
-def multiply_nums(num, *args): -> correct
+# def multiply_nums(*args, num): # wrong
+# def multiply_nums(num, *args): # correct
