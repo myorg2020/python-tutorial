@@ -1,0 +1,44 @@
+OOP is there in Every Programming Language (like Java, C++, C etc). But Syntax is different in each Language.
+In Python also we have OOP.
+
+OOP is just a way/style to write a code...it doesn't enhance the functionality of your code, it's just a way
+to write your code which helps to easily manage and understand the code. It helps to create Real world Programs.
+
+In OOP we will see these words more commonly used:
+1. class
+2. object(also known as instance)
+3. method
+
+class & objects
+================
+Everything in Python we define is object...Suppose we created a below list l and if you check type of it, will get as - <class 'list'>
+It Means there is Already a class list created in python and we create a object in that class list.
+Here l is our object/instance of class list.
+
+l = [1,2,3,4]
+print(type(l))
+
+The output would be below, l is a object of class "list".
+<class 'list'>
+
+we can have another object l in class list like below:
+l = [7,5,6,3]
+
+we can have another object l in class list like below:
+l = ['Amitesh','Ranjan']
+
+These are pre-defined created class in Python like list, dict and etc. and we create object/instance of those classes.
+class is Actually a blueprint of object, means how your upcoming objects will look like, e.g: in list class it's already pre-defined how a object in list should look, it should have paranthesis like [], it can have int, it can have string..etc.
+
+Similarly, we can also create our own class and objects/instance
+
+method
+======
+Now we will see method...Here we have used a methond/function append() applied on object l of class list. Like this we have many methods/functions pop(), clear(), copy() etc.
+l = [1,2,3,4]
+l.append(8)
+These are pre-defined created methods in class list to perform certain operations in that class.
+Hence, similarly we can also create our own functions in our own class.
+And in OOP those functions are called methods, so we create method in our class. 
+
+
