@@ -19,6 +19,7 @@
 # So to come over this we can use class variable which will be common for all objects.
 # see below how to declare a class variable and used in objects.
 # Here we have declared a class variable as "pi = 3.14" and called in method as "Circle.pi"
+# class variables are also called "class Attributes"
 
 class Circle:
     pi = 3.14
